@@ -1,0 +1,384 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include \char`\"{}Stworzenia.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_aa2bffa8077ea266b0222e9ad89bcf044}{drukuj\+Linie}} (int n)
+\item 
+void \mbox{\hyperlink{main_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}{help}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_a591778493570be8b4687c91ba356b1a1}{wyswietl\+Pule}} (const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula)
+\item 
+void \mbox{\hyperlink{main_8cpp_a81d4e3c9ce19ca5ddd1c7c3219eb42e2}{wybor\+Poziomu}} (int \&poziom\+Trudnosci)
+\item 
+void \mbox{\hyperlink{main_8cpp_a65beb959fffe6dd1153bc3a804b9da82}{wybor\+Druzyny}} (const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula, std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula\+Gracza)
+\item 
+void \mbox{\hyperlink{main_8cpp_af8ef2d41c573ca46afba75ffd26b1e06}{losowanie\+Przeciwnikow}} (int poziom\+Trudnosci, const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula, std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula\+Przeciwnika)
+\item 
+int \mbox{\hyperlink{main_8cpp_a5bf554aaf3a192106761f8ab500bcb35}{wybor\+Akcji}} ()
+\item 
+int \mbox{\hyperlink{main_8cpp_a3831f7cdf7a9de0f68092000c07b9053}{wybor\+Umiejetnosci}} (const \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$stworzenie)
+\item 
+void \mbox{\hyperlink{main_8cpp_a8742d93bd1d80837fa90fa7dcf4265c8}{atak}} (\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$stworzenie\+Gracza, \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$stworzenie\+Przeciwnika)
+\item 
+void \mbox{\hyperlink{main_8cpp_a995ecb85d63f4d1f0605c96a73ae660b}{umiejetnosc\+Specjalna}} (\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$stworzenie\+Gracza, \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$stworzenie\+Przeciwnika, int moc)
+\item 
+void \mbox{\hyperlink{main_8cpp_ad63775ae20ceebca414bbb91e0823bc2}{wymiana}} (int wybor, const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula, \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$$\ast$stworzenie)
+\item 
+void \mbox{\hyperlink{main_8cpp_a4c29b710e3cf06ee7f899bb2035e4788}{wybor\+Wymiana}} (const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula, \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$$\ast$stworzenie)
+\item 
+void \mbox{\hyperlink{main_8cpp_a9c48dd141891d7e832e3bc5e968bafc9}{ewolucja}} (int atrybut1, int atrybut2, \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$stworzenie)
+\item 
+bool \mbox{\hyperlink{main_8cpp_a62cfde6f455323e5d0f10afe3831442a}{wybor\+Ewolucji}} (\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$stworzenie)
+\item 
+void \mbox{\hyperlink{main_8cpp_a1dedb8436679146bac7ecf3181a7d750}{zapisz\+Wyjdz}} ()
+\item 
+bool \mbox{\hyperlink{main_8cpp_a97f024fe433d7bb9da9f09092beeec5a}{ruch\+Gracza}} (std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula, \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$\&stworzenie\+Gracza, \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$\&stworzenie\+Przeciwnika)
+\item 
+bool \mbox{\hyperlink{main_8cpp_a5513d77b5930e46b22bf7a990ea8b1b7}{ruch\+Przeciwnika}} (std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula, \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$\&stworzenie\+Gracza, \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$\&stworzenie\+Przeciwnika)
+\item 
+bool \mbox{\hyperlink{main_8cpp_ae04aa3410ba8c732170a9318388bccfb}{koniec}} (const int poziom\+Trudnosci, const int runda)
+\item 
+bool \mbox{\hyperlink{main_8cpp_a50c8fa499059c148e319346c6999c583}{pusta\+Pula}} (const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula)
+\item 
+void \mbox{\hyperlink{main_8cpp_aabd1659b1b8ecffef324668c307d3677}{zemdlale\+Los}} (const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula, \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$\&stworzenie)
+\item 
+void \mbox{\hyperlink{main_8cpp_acbc06a1ebdb25b93357624832bf57687}{zemdlale\+Wybor}} (const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula, \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$\&stworzenie)
+\item 
+void \mbox{\hyperlink{main_8cpp_aeae98da773785987c7e11843db8e8b9f}{ulecz}} (std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula)
+\item 
+void \mbox{\hyperlink{main_8cpp_a8590dc7feeda7f2e8c6fd48e0cb49b31}{przywroc\+Sile}} (std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula)
+\item 
+void \mbox{\hyperlink{main_8cpp_a7777d7d20f08fd0dc4b2375b5850f59d}{dodaj\+Exp}} (\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$stworzenie\+Gracza, \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$stworzenie\+Przeciwnika)
+\item 
+void \mbox{\hyperlink{main_8cpp_a2d14a32c2a7e7276973cbe03cb7162d1}{usun}} (std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&pula)
+\item 
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a8742d93bd1d80837fa90fa7dcf4265c8}\label{main_8cpp_a8742d93bd1d80837fa90fa7dcf4265c8}} 
+\index{main.cpp@{main.cpp}!atak@{atak}}
+\index{atak@{atak}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{atak()}{atak()}}
+{\footnotesize\ttfamily void atak (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$}]{stworzenie\+Gracza,  }\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$}]{stworzenie\+Przeciwnika }\end{DoxyParamCaption})}
+
+Funkcja sluzy do zadawania ataku stworzeniu przeciwnika 
+\begin{DoxyParams}{Parameters}
+{\em stworzenie\+Gracza} & stworzenie atakujace \\
+\hline
+{\em stworzenie\+Przeciwnika} & stworzenie atakowane \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a7777d7d20f08fd0dc4b2375b5850f59d}\label{main_8cpp_a7777d7d20f08fd0dc4b2375b5850f59d}} 
+\index{main.cpp@{main.cpp}!dodajExp@{dodajExp}}
+\index{dodajExp@{dodajExp}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{dodajExp()}{dodajExp()}}
+{\footnotesize\ttfamily void dodaj\+Exp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$}]{stworzenie\+Gracza,  }\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$}]{stworzenie\+Przeciwnika }\end{DoxyParamCaption})}
+
+Funkcja dodaje punkty EXP za pokonanie przeciwnika 
+\begin{DoxyParams}{Parameters}
+{\em stworzenie\+Gracza} & stworzenie gracza \\
+\hline
+{\em stworzenie\+Przeciwnika} & stworzenie przeciwnika \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_aa2bffa8077ea266b0222e9ad89bcf044}\label{main_8cpp_aa2bffa8077ea266b0222e9ad89bcf044}} 
+\index{main.cpp@{main.cpp}!drukujLinie@{drukujLinie}}
+\index{drukujLinie@{drukujLinie}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{drukujLinie()}{drukujLinie()}}
+{\footnotesize\ttfamily void drukuj\+Linie (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+Funkcja wyswietla linie dlugosci n znakow 
+\begin{DoxyParams}{Parameters}
+{\em n} & liczba znakow \textquotesingle{}-\/\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a9c48dd141891d7e832e3bc5e968bafc9}\label{main_8cpp_a9c48dd141891d7e832e3bc5e968bafc9}} 
+\index{main.cpp@{main.cpp}!ewolucja@{ewolucja}}
+\index{ewolucja@{ewolucja}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ewolucja()}{ewolucja()}}
+{\footnotesize\ttfamily void ewolucja (\begin{DoxyParamCaption}\item[{int}]{atrybut1,  }\item[{int}]{atrybut2,  }\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$}]{stworzenie }\end{DoxyParamCaption})}
+
+Funkcja obsluguje ewolucje zadanego stworzenia 
+\begin{DoxyParams}{Parameters}
+{\em atrybut1} & pierwszy atrybut do ewolucji \\
+\hline
+{\em atrybut2} & drugi atrybut do ewolucji \\
+\hline
+{\em stworzenie} & ewoluowane stworzenie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}\label{main_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}} 
+\index{main.cpp@{main.cpp}!help@{help}}
+\index{help@{help}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyswietla menu pomocy \mbox{\Hypertarget{main_8cpp_ae04aa3410ba8c732170a9318388bccfb}\label{main_8cpp_ae04aa3410ba8c732170a9318388bccfb}} 
+\index{main.cpp@{main.cpp}!koniec@{koniec}}
+\index{koniec@{koniec}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{koniec()}{koniec()}}
+{\footnotesize\ttfamily bool koniec (\begin{DoxyParamCaption}\item[{const int}]{poziom\+Trudnosci,  }\item[{const int}]{runda }\end{DoxyParamCaption})}
+
+Funkcja sprawdza czy gra powinna sie zakonczyc 
+\begin{DoxyParams}{Parameters}
+{\em poziom\+Trudnosci} & aktualny poziom trudnosci \\
+\hline
+{\em runda} & aktualna runda \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zakonczenie gry w postaci bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_af8ef2d41c573ca46afba75ffd26b1e06}\label{main_8cpp_af8ef2d41c573ca46afba75ffd26b1e06}} 
+\index{main.cpp@{main.cpp}!losowaniePrzeciwnikow@{losowaniePrzeciwnikow}}
+\index{losowaniePrzeciwnikow@{losowaniePrzeciwnikow}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{losowaniePrzeciwnikow()}{losowaniePrzeciwnikow()}}
+{\footnotesize\ttfamily void losowanie\+Przeciwnikow (\begin{DoxyParamCaption}\item[{int}]{poziom\+Trudnosci,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula\+Przeciwnika }\end{DoxyParamCaption})}
+
+Funkcja losuje druzyne przeciwnika, ilosc stworzen zalezy od poziomu trudnosci 
+\begin{DoxyParams}{Parameters}
+{\em poziom\+Trudnosci} & wybrany poziom trudnosci \\
+\hline
+{\em pula} & predefiniowana pula stworzen \\
+\hline
+{\em pula\+Przeciwnika} & pula przeciwnika, do ktorej beda dodawane stworzenia \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a8590dc7feeda7f2e8c6fd48e0cb49b31}\label{main_8cpp_a8590dc7feeda7f2e8c6fd48e0cb49b31}} 
+\index{main.cpp@{main.cpp}!przywrocSile@{przywrocSile}}
+\index{przywrocSile@{przywrocSile}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{przywrocSile()}{przywrocSile()}}
+{\footnotesize\ttfamily void przywroc\+Sile (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula }\end{DoxyParamCaption})}
+
+Funkcja przywraca domyslna sile stworzeniom z puli 
+\begin{DoxyParams}{Parameters}
+{\em pula} & pula stworzen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a50c8fa499059c148e319346c6999c583}\label{main_8cpp_a50c8fa499059c148e319346c6999c583}} 
+\index{main.cpp@{main.cpp}!pustaPula@{pustaPula}}
+\index{pustaPula@{pustaPula}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{pustaPula()}{pustaPula()}}
+{\footnotesize\ttfamily bool pusta\+Pula (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula }\end{DoxyParamCaption})}
+
+Funkcja sprawdza czy pula zawiera same zemdlale stworzenia 
+\begin{DoxyParams}{Parameters}
+{\em pula} & zadana pula \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+stan puli w postaci bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a97f024fe433d7bb9da9f09092beeec5a}\label{main_8cpp_a97f024fe433d7bb9da9f09092beeec5a}} 
+\index{main.cpp@{main.cpp}!ruchGracza@{ruchGracza}}
+\index{ruchGracza@{ruchGracza}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ruchGracza()}{ruchGracza()}}
+{\footnotesize\ttfamily bool ruch\+Gracza (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula,  }\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$\&}]{stworzenie\+Gracza,  }\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$\&}]{stworzenie\+Przeciwnika }\end{DoxyParamCaption})}
+
+Funkcja obsluguje ruch gracza 
+\begin{DoxyParams}{Parameters}
+{\em pula} & pula gracza \\
+\hline
+{\em stworzenie\+Gracza} & aktualne stworzenie gracza \\
+\hline
+{\em stworzenie\+Przeciwnika} & aktualne stworzenie przeciwnika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+powodzenie ruchu w postaci bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a5513d77b5930e46b22bf7a990ea8b1b7}\label{main_8cpp_a5513d77b5930e46b22bf7a990ea8b1b7}} 
+\index{main.cpp@{main.cpp}!ruchPrzeciwnika@{ruchPrzeciwnika}}
+\index{ruchPrzeciwnika@{ruchPrzeciwnika}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ruchPrzeciwnika()}{ruchPrzeciwnika()}}
+{\footnotesize\ttfamily bool ruch\+Przeciwnika (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula,  }\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$\&}]{stworzenie\+Gracza,  }\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$\&}]{stworzenie\+Przeciwnika }\end{DoxyParamCaption})}
+
+Funkcja obsluguje ruch przeciwnika 
+\begin{DoxyParams}{Parameters}
+{\em pula} & pula przeciwnika \\
+\hline
+{\em stworzenie\+Gracza} & stworzenie przeciwnika \\
+\hline
+{\em stworzenie\+Przeciwnika} & stworzenie gracza \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+powodzenie ruchu w postaci bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_aeae98da773785987c7e11843db8e8b9f}\label{main_8cpp_aeae98da773785987c7e11843db8e8b9f}} 
+\index{main.cpp@{main.cpp}!ulecz@{ulecz}}
+\index{ulecz@{ulecz}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ulecz()}{ulecz()}}
+{\footnotesize\ttfamily void ulecz (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula }\end{DoxyParamCaption})}
+
+Funkcja przywraca maksymalne punkty zycia stworzeniom z puli 
+\begin{DoxyParams}{Parameters}
+{\em pula} & pula stworzen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a995ecb85d63f4d1f0605c96a73ae660b}\label{main_8cpp_a995ecb85d63f4d1f0605c96a73ae660b}} 
+\index{main.cpp@{main.cpp}!umiejetnoscSpecjalna@{umiejetnoscSpecjalna}}
+\index{umiejetnoscSpecjalna@{umiejetnoscSpecjalna}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{umiejetnoscSpecjalna()}{umiejetnoscSpecjalna()}}
+{\footnotesize\ttfamily void umiejetnosc\+Specjalna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$}]{stworzenie\+Gracza,  }\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$}]{stworzenie\+Przeciwnika,  }\item[{int}]{moc }\end{DoxyParamCaption})}
+
+Funkcja sluzy do zmiany atrybutu sila, w zaleznosci od wybranej mocy graczowi lub przeciwnikowi 
+\begin{DoxyParams}{Parameters}
+{\em stworzenie\+Gracza} & stworzenie atakujacego \\
+\hline
+{\em stworzenie\+Przeciwnika} & stworzenie atakowane \\
+\hline
+{\em moc} & numer wybranej mocy specjalnej \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a2d14a32c2a7e7276973cbe03cb7162d1}\label{main_8cpp_a2d14a32c2a7e7276973cbe03cb7162d1}} 
+\index{main.cpp@{main.cpp}!usun@{usun}}
+\index{usun@{usun}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{usun()}{usun()}}
+{\footnotesize\ttfamily void usun (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula }\end{DoxyParamCaption})}
+
+Funkcja usuwa stworzenia z puli 
+\begin{DoxyParams}{Parameters}
+{\em pula} & zadana pula \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a5bf554aaf3a192106761f8ab500bcb35}\label{main_8cpp_a5bf554aaf3a192106761f8ab500bcb35}} 
+\index{main.cpp@{main.cpp}!wyborAkcji@{wyborAkcji}}
+\index{wyborAkcji@{wyborAkcji}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{wyborAkcji()}{wyborAkcji()}}
+{\footnotesize\ttfamily int wybor\+Akcji (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja obsluguje wybor akcji przez gracza \begin{DoxyReturn}{Returns}
+numer akcji w postaci int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a65beb959fffe6dd1153bc3a804b9da82}\label{main_8cpp_a65beb959fffe6dd1153bc3a804b9da82}} 
+\index{main.cpp@{main.cpp}!wyborDruzyny@{wyborDruzyny}}
+\index{wyborDruzyny@{wyborDruzyny}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{wyborDruzyny()}{wyborDruzyny()}}
+{\footnotesize\ttfamily void wybor\+Druzyny (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula\+Gracza }\end{DoxyParamCaption})}
+
+Funkcja pozwala uzytkownikowi wybrac druzyne 6 stworzen 
+\begin{DoxyParams}{Parameters}
+{\em pula} & predefiniowana pula stworzen \\
+\hline
+{\em pula\+Gracza} & pula gracza \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a62cfde6f455323e5d0f10afe3831442a}\label{main_8cpp_a62cfde6f455323e5d0f10afe3831442a}} 
+\index{main.cpp@{main.cpp}!wyborEwolucji@{wyborEwolucji}}
+\index{wyborEwolucji@{wyborEwolucji}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{wyborEwolucji()}{wyborEwolucji()}}
+{\footnotesize\ttfamily bool wybor\+Ewolucji (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$}]{stworzenie }\end{DoxyParamCaption})}
+
+Funkcja sluzy do wybou atrybutow i ewolucji stworzenia 
+\begin{DoxyParams}{Parameters}
+{\em stworzenie} & ewoluowane stworzenie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+powodzenie ewolucji w postaci bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a81d4e3c9ce19ca5ddd1c7c3219eb42e2}\label{main_8cpp_a81d4e3c9ce19ca5ddd1c7c3219eb42e2}} 
+\index{main.cpp@{main.cpp}!wyborPoziomu@{wyborPoziomu}}
+\index{wyborPoziomu@{wyborPoziomu}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{wyborPoziomu()}{wyborPoziomu()}}
+{\footnotesize\ttfamily void wybor\+Poziomu (\begin{DoxyParamCaption}\item[{int \&}]{poziom\+Trudnosci }\end{DoxyParamCaption})}
+
+Funkcja obsluguje wybor poziomu przez gracza 
+\begin{DoxyParams}{Parameters}
+{\em poziom\+Trudnosci} & referencja do poziomu trudnosci do zmodyfikowania \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a3831f7cdf7a9de0f68092000c07b9053}\label{main_8cpp_a3831f7cdf7a9de0f68092000c07b9053}} 
+\index{main.cpp@{main.cpp}!wyborUmiejetnosci@{wyborUmiejetnosci}}
+\index{wyborUmiejetnosci@{wyborUmiejetnosci}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{wyborUmiejetnosci()}{wyborUmiejetnosci()}}
+{\footnotesize\ttfamily int wybor\+Umiejetnosci (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$}]{stworzenie }\end{DoxyParamCaption})}
+
+Funkcja obluguje wybor umiejetnosci specjalnej przez gracza 
+\begin{DoxyParams}{Parameters}
+{\em stworzenie} & aktualne stworzenie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+numer umiejetnosci w postaci int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a4c29b710e3cf06ee7f899bb2035e4788}\label{main_8cpp_a4c29b710e3cf06ee7f899bb2035e4788}} 
+\index{main.cpp@{main.cpp}!wyborWymiana@{wyborWymiana}}
+\index{wyborWymiana@{wyborWymiana}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{wyborWymiana()}{wyborWymiana()}}
+{\footnotesize\ttfamily void wybor\+Wymiana (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula,  }\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$$\ast$}]{stworzenie }\end{DoxyParamCaption})}
+
+Funkcja obsluguje wymiane stworzenia aktualnego na inne stworzenie z puli gracza 
+\begin{DoxyParams}{Parameters}
+{\em pula} & pula gracza \\
+\hline
+{\em stworzenie} & aktualne stworzenie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_ad63775ae20ceebca414bbb91e0823bc2}\label{main_8cpp_ad63775ae20ceebca414bbb91e0823bc2}} 
+\index{main.cpp@{main.cpp}!wymiana@{wymiana}}
+\index{wymiana@{wymiana}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{wymiana()}{wymiana()}}
+{\footnotesize\ttfamily void wymiana (\begin{DoxyParamCaption}\item[{int}]{wybor,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula,  }\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$$\ast$}]{stworzenie }\end{DoxyParamCaption})}
+
+Funkcja obsluguje wymiane stworzenia na wskazane 
+\begin{DoxyParams}{Parameters}
+{\em wybor} & wskazane stworzenie \\
+\hline
+{\em pula} & pula z ktorej nastapi wymiana \\
+\hline
+{\em stworzenie} & aktualne stworzenie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a591778493570be8b4687c91ba356b1a1}\label{main_8cpp_a591778493570be8b4687c91ba356b1a1}} 
+\index{main.cpp@{main.cpp}!wyswietlPule@{wyswietlPule}}
+\index{wyswietlPule@{wyswietlPule}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{wyswietlPule()}{wyswietlPule()}}
+{\footnotesize\ttfamily void wyswietl\+Pule (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula }\end{DoxyParamCaption})}
+
+Funkcja wyswietla pule stworzen 
+\begin{DoxyParams}{Parameters}
+{\em pula} & zadana pula stworzen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a1dedb8436679146bac7ecf3181a7d750}\label{main_8cpp_a1dedb8436679146bac7ecf3181a7d750}} 
+\index{main.cpp@{main.cpp}!zapiszWyjdz@{zapiszWyjdz}}
+\index{zapiszWyjdz@{zapiszWyjdz}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{zapiszWyjdz()}{zapiszWyjdz()}}
+{\footnotesize\ttfamily void zapisz\+Wyjdz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja zapisuje stan gry i konczy program \mbox{\Hypertarget{main_8cpp_aabd1659b1b8ecffef324668c307d3677}\label{main_8cpp_aabd1659b1b8ecffef324668c307d3677}} 
+\index{main.cpp@{main.cpp}!zemdlaleLos@{zemdlaleLos}}
+\index{zemdlaleLos@{zemdlaleLos}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{zemdlaleLos()}{zemdlaleLos()}}
+{\footnotesize\ttfamily void zemdlale\+Los (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula,  }\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$\&}]{stworzenie }\end{DoxyParamCaption})}
+
+Funkcja losuje stworzenie dla przeciwnika 
+\begin{DoxyParams}{Parameters}
+{\em pula} & pula przeciwnika \\
+\hline
+{\em stworzenie} & aktualne stworzenie przeciwnika \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_acbc06a1ebdb25b93357624832bf57687}\label{main_8cpp_acbc06a1ebdb25b93357624832bf57687}} 
+\index{main.cpp@{main.cpp}!zemdlaleWybor@{zemdlaleWybor}}
+\index{zemdlaleWybor@{zemdlaleWybor}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{zemdlaleWybor()}{zemdlaleWybor()}}
+{\footnotesize\ttfamily void zemdlale\+Wybor (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$ $>$ \&}]{pula,  }\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} $\ast$\&}]{stworzenie }\end{DoxyParamCaption})}
+
+Funkcja obsluguje wybor stworzenia w przypadku zemdlalego aktualnego stworzenia 
+\begin{DoxyParams}{Parameters}
+{\em pula} & pula gracza \\
+\hline
+{\em stworzenie} & aktualne stworzenie \\
+\hline
+\end{DoxyParams}

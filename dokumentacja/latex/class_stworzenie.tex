@@ -1,0 +1,278 @@
+\hypertarget{class_stworzenie}{}\doxysection{Stworzenie Class Reference}
+\label{class_stworzenie}\index{Stworzenie@{Stworzenie}}
+Inheritance diagram for Stworzenie\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.296296cm]{class_stworzenie}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stworzenie_ac62b2efb176a2b73edaced6686acf0a8}\label{class_stworzenie_ac62b2efb176a2b73edaced6686acf0a8}} 
+enum {\bfseries Typ} \{ \newline
+{\bfseries NONE}
+, {\bfseries WODA}
+, {\bfseries ZIEMIA}
+, {\bfseries OGIEN}
+, \newline
+{\bfseries POWIETRZE}
+, {\bfseries LOD}
+, {\bfseries STAL}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stworzenie_a619dc36d8d5884056e1618b2db2d4c0d}{Stworzenie}} (std\+::string \&nazwa)
+\item 
+\mbox{\hyperlink{class_stworzenie_aae900518cec57a2f7d3323c99971c7a2}{Stworzenie}} (const \mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&s)
+\item 
+\mbox{\Hypertarget{class_stworzenie_af22c58b170ee1beb59bad8aa2373b77c}\label{class_stworzenie_af22c58b170ee1beb59bad8aa2373b77c}} 
+const std\+::string \& {\bfseries get\+Nazwa} () const
+\item 
+\mbox{\Hypertarget{class_stworzenie_ac8a00dde9c903459e8daef7440cb1ee1}\label{class_stworzenie_ac8a00dde9c903459e8daef7440cb1ee1}} 
+Typ {\bfseries get\+Typ} () const
+\item 
+\mbox{\Hypertarget{class_stworzenie_a015a981c3267b04f07e12ad92f0e8ec9}\label{class_stworzenie_a015a981c3267b04f07e12ad92f0e8ec9}} 
+int {\bfseries get\+Przyjete\+Exp} () const
+\item 
+\mbox{\Hypertarget{class_stworzenie_a6b1aaa5a4ff9e2816de8690244561bfd}\label{class_stworzenie_a6b1aaa5a4ff9e2816de8690244561bfd}} 
+bool {\bfseries get\+WGrze} () const
+\item 
+\mbox{\Hypertarget{class_stworzenie_aeb8b362cb469f6c45e531cdd2ec25753}\label{class_stworzenie_aeb8b362cb469f6c45e531cdd2ec25753}} 
+int {\bfseries get\+Wymagane\+Exp} () const
+\item 
+\mbox{\Hypertarget{class_stworzenie_a78dad16ed14573c7583cd3f7cc0522e1}\label{class_stworzenie_a78dad16ed14573c7583cd3f7cc0522e1}} 
+const std\+::string $\ast$ {\bfseries get\+Moc\+Specjalna} () const
+\item 
+\mbox{\Hypertarget{class_stworzenie_af004668237be508cde2b7c5870d7d161}\label{class_stworzenie_af004668237be508cde2b7c5870d7d161}} 
+int {\bfseries get\+Zuzyte\+Moc} () const
+\item 
+virtual double \mbox{\hyperlink{class_stworzenie_ad27ebbb38386e04bf29b3d66b39284db}{modyfikator}} (\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie)
+\item 
+void \mbox{\hyperlink{class_stworzenie_a4d261c7c700ecc2dd700244f12d32a7f}{atak}} (\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie)
+\item 
+void \mbox{\hyperlink{class_stworzenie_a371b55f9f74af0c7547422819b75f7fa}{umiejetnosc\+Specjalna}} (\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie, int moc)
+\item 
+void \mbox{\hyperlink{class_stworzenie_a9ccf9877fe3722af7494b7755c6136a8}{ewolucja}} (int atrybut1, int atrybut2)
+\item 
+void \mbox{\hyperlink{class_stworzenie_a5d09da501c1c28f15613eeebe664ac93}{zwiekszenie\+Atrybutu}} (int atrybut)
+\item 
+void \mbox{\hyperlink{class_stworzenie_a0514d0faea0b997a2025fb63e9e02f36}{przywroc\+Sile}} ()
+\item 
+void \mbox{\hyperlink{class_stworzenie_ae9032df7e9ac29bb782befc00ba43b3e}{ulecz}} ()
+\item 
+void \mbox{\hyperlink{class_stworzenie_a1d25d20eed92214759a493184e58807f}{dodaj\+Exp}} (\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_stworzenie_a2fa0cff7ac9ea905704dc7b9c35ab3b0}{czy\+Unik}} (double zrecznosc)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stworzenie_aef483e18361322d34ef4591afcbe6611}\label{class_stworzenie_aef483e18361322d34ef4591afcbe6611}} 
+std\+::string {\bfseries nazwa}
+\item 
+\mbox{\Hypertarget{class_stworzenie_af0898253630556c9172a838758033367}\label{class_stworzenie_af0898253630556c9172a838758033367}} 
+double {\bfseries punkty\+Zycia}
+\item 
+\mbox{\Hypertarget{class_stworzenie_abb19964749301a57762cf54a29375181}\label{class_stworzenie_abb19964749301a57762cf54a29375181}} 
+int {\bfseries max\+Punkty\+Zycia}
+\item 
+\mbox{\Hypertarget{class_stworzenie_abf4487e248b01d604f1021f5cfcf2943}\label{class_stworzenie_abf4487e248b01d604f1021f5cfcf2943}} 
+double {\bfseries sila\+Podstawowa}
+\item 
+\mbox{\Hypertarget{class_stworzenie_ac18f330c506af14ed754fe712192fa04}\label{class_stworzenie_ac18f330c506af14ed754fe712192fa04}} 
+double {\bfseries sila}
+\item 
+\mbox{\Hypertarget{class_stworzenie_a6cdf1f58e63d64c8b65a5a9ab37d4c76}\label{class_stworzenie_a6cdf1f58e63d64c8b65a5a9ab37d4c76}} 
+int {\bfseries ilosc\+MocS}
+\item 
+\mbox{\Hypertarget{class_stworzenie_ae68a7f96ac9a826fcb1c0a72cb7ca685}\label{class_stworzenie_ae68a7f96ac9a826fcb1c0a72cb7ca685}} 
+int {\bfseries zuzyte\+Moc}
+\item 
+\mbox{\Hypertarget{class_stworzenie_a76b9547667f00108905d249c387648c9}\label{class_stworzenie_a76b9547667f00108905d249c387648c9}} 
+std\+::string {\bfseries moc\+Specjalna} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{class_stworzenie_aa69ffd07438b098a568c660b587bdb31}\label{class_stworzenie_aa69ffd07438b098a568c660b587bdb31}} 
+int {\bfseries exp}
+\item 
+\mbox{\Hypertarget{class_stworzenie_ad800d505fe51ea1de2d7f3c6bd5ec588}\label{class_stworzenie_ad800d505fe51ea1de2d7f3c6bd5ec588}} 
+int {\bfseries przyjete\+Exp}
+\item 
+\mbox{\Hypertarget{class_stworzenie_a4dbbe4d2533458990d07ff9842aca23b}\label{class_stworzenie_a4dbbe4d2533458990d07ff9842aca23b}} 
+int {\bfseries wymagane\+Exp}
+\item 
+\mbox{\Hypertarget{class_stworzenie_a629a1ea2a10bc1b4b5f9fee05494c3de}\label{class_stworzenie_a629a1ea2a10bc1b4b5f9fee05494c3de}} 
+double {\bfseries zrecznosc}
+\item 
+\mbox{\Hypertarget{class_stworzenie_a288ac097055d28e258fdbf937966ad3f}\label{class_stworzenie_a288ac097055d28e258fdbf937966ad3f}} 
+Typ {\bfseries typ}
+\item 
+\mbox{\Hypertarget{class_stworzenie_a4a919dd2d85182ee5499f004b77dd232}\label{class_stworzenie_a4a919dd2d85182ee5499f004b77dd232}} 
+bool {\bfseries w\+Grze}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_stworzenie_acc6d3e1c63ae3f9b26db4ce9fcb575ba}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stworzenie_a619dc36d8d5884056e1618b2db2d4c0d}\label{class_stworzenie_a619dc36d8d5884056e1618b2db2d4c0d}} 
+\index{Stworzenie@{Stworzenie}!Stworzenie@{Stworzenie}}
+\index{Stworzenie@{Stworzenie}!Stworzenie@{Stworzenie}}
+\doxysubsubsection{\texorpdfstring{Stworzenie()}{Stworzenie()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Stworzenie\+::\+Stworzenie (\begin{DoxyParamCaption}\item[{std\+::string \&}]{nazwa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Konstruktor domyslny klasy \mbox{\hyperlink{class_stworzenie}{Stworzenie}} 
+\begin{DoxyParams}{Parameters}
+{\em nazwa} & przyjmowana nazwa \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stworzenie_aae900518cec57a2f7d3323c99971c7a2}\label{class_stworzenie_aae900518cec57a2f7d3323c99971c7a2}} 
+\index{Stworzenie@{Stworzenie}!Stworzenie@{Stworzenie}}
+\index{Stworzenie@{Stworzenie}!Stworzenie@{Stworzenie}}
+\doxysubsubsection{\texorpdfstring{Stworzenie()}{Stworzenie()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Stworzenie\+::\+Stworzenie (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&}]{s }\end{DoxyParamCaption})}
+
+Konstruktor kopiujacy 
+\begin{DoxyParams}{Parameters}
+{\em s} & kopiowane stworzenie \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stworzenie_a4d261c7c700ecc2dd700244f12d32a7f}\label{class_stworzenie_a4d261c7c700ecc2dd700244f12d32a7f}} 
+\index{Stworzenie@{Stworzenie}!atak@{atak}}
+\index{atak@{atak}!Stworzenie@{Stworzenie}}
+\doxysubsubsection{\texorpdfstring{atak()}{atak()}}
+{\footnotesize\ttfamily void Stworzenie\+::atak (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&}]{stworzenie }\end{DoxyParamCaption})}
+
+Funkcja obsluguje zadawanie ataku stworzeniu przeciwnika 
+\begin{DoxyParams}{Parameters}
+{\em stworzenie} & stworzenie przeciwnika \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stworzenie_a2fa0cff7ac9ea905704dc7b9c35ab3b0}\label{class_stworzenie_a2fa0cff7ac9ea905704dc7b9c35ab3b0}} 
+\index{Stworzenie@{Stworzenie}!czyUnik@{czyUnik}}
+\index{czyUnik@{czyUnik}!Stworzenie@{Stworzenie}}
+\doxysubsubsection{\texorpdfstring{czyUnik()}{czyUnik()}}
+{\footnotesize\ttfamily bool Stworzenie\+::czy\+Unik (\begin{DoxyParamCaption}\item[{double}]{zrecznosc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Funkcja sprawdza, czy stworzenie przeciwnika uniknelo ataku 
+\begin{DoxyParams}{Parameters}
+{\em zrecznosc} & zrecznosc przeciwnika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+czy uniknieto ataku w postaci bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stworzenie_a1d25d20eed92214759a493184e58807f}\label{class_stworzenie_a1d25d20eed92214759a493184e58807f}} 
+\index{Stworzenie@{Stworzenie}!dodajExp@{dodajExp}}
+\index{dodajExp@{dodajExp}!Stworzenie@{Stworzenie}}
+\doxysubsubsection{\texorpdfstring{dodajExp()}{dodajExp()}}
+{\footnotesize\ttfamily void Stworzenie\+::dodaj\+Exp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&}]{stworzenie }\end{DoxyParamCaption})}
+
+Funkcja dodaje zdobyte punkty EXP do puli przyjetych punktow 
+\begin{DoxyParams}{Parameters}
+{\em stworzenie} & pokonane stworzenie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stworzenie_a9ccf9877fe3722af7494b7755c6136a8}\label{class_stworzenie_a9ccf9877fe3722af7494b7755c6136a8}} 
+\index{Stworzenie@{Stworzenie}!ewolucja@{ewolucja}}
+\index{ewolucja@{ewolucja}!Stworzenie@{Stworzenie}}
+\doxysubsubsection{\texorpdfstring{ewolucja()}{ewolucja()}}
+{\footnotesize\ttfamily void Stworzenie\+::ewolucja (\begin{DoxyParamCaption}\item[{int}]{atrybut1,  }\item[{int}]{atrybut2 }\end{DoxyParamCaption})}
+
+Funkcja obsluguje modyfikacje 2 wybranych atrybutow podczas ewolucji 
+\begin{DoxyParams}{Parameters}
+{\em atrybut1} & pierwszy atrybut do ewolucji \\
+\hline
+{\em atrybut2} & drugi atrybut do ewolucji \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stworzenie_ad27ebbb38386e04bf29b3d66b39284db}\label{class_stworzenie_ad27ebbb38386e04bf29b3d66b39284db}} 
+\index{Stworzenie@{Stworzenie}!modyfikator@{modyfikator}}
+\index{modyfikator@{modyfikator}!Stworzenie@{Stworzenie}}
+\doxysubsubsection{\texorpdfstring{modyfikator()}{modyfikator()}}
+{\footnotesize\ttfamily double Stworzenie\+::modyfikator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&}]{stworzenie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Modyfikator dla ataku stworzenia 
+\begin{DoxyParams}{Parameters}
+{\em stworzenie} & atakowane stworzenie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wartosc double modyfikatora, domyslnie 1 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_stworzenie_wodne_abe3f1a48d62a8d77bb2a6a2073883ab3}{Stworzenie\+Wodne}}, \mbox{\hyperlink{class_stworzenie_ziemne_ab8af50a0aec7d74e4dae88688907c465}{Stworzenie\+Ziemne}}, \mbox{\hyperlink{class_stworzenie_ogniste_a7d79c74e92ab964aae7c037056786ae1}{Stworzenie\+Ogniste}}, \mbox{\hyperlink{class_stworzenie_powietrzne_a82dd55b8c33969d841855c46e0334fee}{Stworzenie\+Powietrzne}}, \mbox{\hyperlink{class_stworzenie_lodowe_a55a0fc14b713e56abec64bdddd7b7827}{Stworzenie\+Lodowe}}, and \mbox{\hyperlink{class_stworzenie_stalowe_ab27f185d9a183553ba02ca77d3c81d2e}{Stworzenie\+Stalowe}}.
+
+\mbox{\Hypertarget{class_stworzenie_a0514d0faea0b997a2025fb63e9e02f36}\label{class_stworzenie_a0514d0faea0b997a2025fb63e9e02f36}} 
+\index{Stworzenie@{Stworzenie}!przywrocSile@{przywrocSile}}
+\index{przywrocSile@{przywrocSile}!Stworzenie@{Stworzenie}}
+\doxysubsubsection{\texorpdfstring{przywrocSile()}{przywrocSile()}}
+{\footnotesize\ttfamily void Stworzenie\+::przywroc\+Sile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja przywraca domyslna sile stworzenia \mbox{\Hypertarget{class_stworzenie_ae9032df7e9ac29bb782befc00ba43b3e}\label{class_stworzenie_ae9032df7e9ac29bb782befc00ba43b3e}} 
+\index{Stworzenie@{Stworzenie}!ulecz@{ulecz}}
+\index{ulecz@{ulecz}!Stworzenie@{Stworzenie}}
+\doxysubsubsection{\texorpdfstring{ulecz()}{ulecz()}}
+{\footnotesize\ttfamily void Stworzenie\+::ulecz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja przywraca wartosci domyslne dla punktow zycia i ilosci uzyc mocy \mbox{\Hypertarget{class_stworzenie_a371b55f9f74af0c7547422819b75f7fa}\label{class_stworzenie_a371b55f9f74af0c7547422819b75f7fa}} 
+\index{Stworzenie@{Stworzenie}!umiejetnoscSpecjalna@{umiejetnoscSpecjalna}}
+\index{umiejetnoscSpecjalna@{umiejetnoscSpecjalna}!Stworzenie@{Stworzenie}}
+\doxysubsubsection{\texorpdfstring{umiejetnoscSpecjalna()}{umiejetnoscSpecjalna()}}
+{\footnotesize\ttfamily void Stworzenie\+::umiejetnosc\+Specjalna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&}]{stworzenie,  }\item[{int}]{moc }\end{DoxyParamCaption})}
+
+Funkcja obsluguje uzycie umiejetnosci specjalnej przez stworzenie 
+\begin{DoxyParams}{Parameters}
+{\em stworzenie} & stworzenie przeciwnika \\
+\hline
+{\em moc} & numer mocy specjalnej \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stworzenie_a5d09da501c1c28f15613eeebe664ac93}\label{class_stworzenie_a5d09da501c1c28f15613eeebe664ac93}} 
+\index{Stworzenie@{Stworzenie}!zwiekszenieAtrybutu@{zwiekszenieAtrybutu}}
+\index{zwiekszenieAtrybutu@{zwiekszenieAtrybutu}!Stworzenie@{Stworzenie}}
+\doxysubsubsection{\texorpdfstring{zwiekszenieAtrybutu()}{zwiekszenieAtrybutu()}}
+{\footnotesize\ttfamily void Stworzenie\+::zwiekszenie\+Atrybutu (\begin{DoxyParamCaption}\item[{int}]{atrybut }\end{DoxyParamCaption})}
+
+Funkcja zwieksza dany atrybut dla danego stworzenia 
+\begin{DoxyParams}{Parameters}
+{\em atrybut} & zwiekszany atrybut \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_stworzenie_acc6d3e1c63ae3f9b26db4ce9fcb575ba}\label{class_stworzenie_acc6d3e1c63ae3f9b26db4ce9fcb575ba}} 
+\index{Stworzenie@{Stworzenie}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Stworzenie@{Stworzenie}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&}]{stworzenie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Przeciazenie operatora do wyswietlania informacji o stworzeniu 
+\begin{DoxyParams}{Parameters}
+{\em os} & strumien \\
+\hline
+{\em stworzenie} & stworzenie do wyswietlenia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ostream 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Stworzenie.\+h\item 
+Stworzenie.\+cpp\end{DoxyCompactItemize}

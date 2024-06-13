@@ -1,0 +1,65 @@
+\hypertarget{_stworzenie_8h_source}{}\doxysection{Stworzenie.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by kinga}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef PROJEKT\_STWORZENIE\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define PROJEKT\_STWORZENIE\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <random>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \{}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \textcolor{keyword}{enum} Typ\{NONE, WODA, ZIEMIA, OGIEN, POWIETRZE, LOD, STAL\};}
+\DoxyCodeLine{15 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{16     std::string nazwa;}
+\DoxyCodeLine{17     \textcolor{keywordtype}{double} punktyZycia;}
+\DoxyCodeLine{18     \textcolor{keywordtype}{int} maxPunktyZycia;}
+\DoxyCodeLine{19     \textcolor{keywordtype}{double} silaPodstawowa;}
+\DoxyCodeLine{20     \textcolor{keywordtype}{double} sila;}
+\DoxyCodeLine{21     \textcolor{keywordtype}{int} iloscMocS;}
+\DoxyCodeLine{22     \textcolor{keywordtype}{int} zuzyteMoc;}
+\DoxyCodeLine{23     std::string mocSpecjalna[2];}
+\DoxyCodeLine{24     \textcolor{keywordtype}{int} exp;}
+\DoxyCodeLine{25     \textcolor{keywordtype}{int} przyjeteExp;}
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} wymaganeExp;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{double} zrecznosc;}
+\DoxyCodeLine{28     Typ typ;}
+\DoxyCodeLine{29     \textcolor{keywordtype}{bool} wGrze;}
+\DoxyCodeLine{30 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_stworzenie_a619dc36d8d5884056e1618b2db2d4c0d}{Stworzenie}}(std::string \&nazwa);}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_stworzenie_a619dc36d8d5884056e1618b2db2d4c0d}{Stworzenie}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&s);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{comment}{//gettery}}
+\DoxyCodeLine{35     \textcolor{keyword}{const} std::string \&getNazwa() \textcolor{keyword}{const};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     Typ getTyp() \textcolor{keyword}{const};}
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} getPrzyjeteExp() \textcolor{keyword}{const};}
+\DoxyCodeLine{39     \textcolor{keywordtype}{bool} getWGrze() \textcolor{keyword}{const};}
+\DoxyCodeLine{40     \textcolor{keywordtype}{int} getWymaganeExp() \textcolor{keyword}{const};}
+\DoxyCodeLine{41     \textcolor{keyword}{const} std::string *getMocSpecjalna() \textcolor{keyword}{const};}
+\DoxyCodeLine{42     \textcolor{keywordtype}{int} getZuzyteMoc() \textcolor{keyword}{const};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_stworzenie_ad27ebbb38386e04bf29b3d66b39284db}{modyfikator}}(\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_stworzenie_a4d261c7c700ecc2dd700244f12d32a7f}{atak}}(\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie);}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_stworzenie_a371b55f9f74af0c7547422819b75f7fa}{umiejetnoscSpecjalna}}(\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie, \textcolor{keywordtype}{int} moc);}
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_stworzenie_a9ccf9877fe3722af7494b7755c6136a8}{ewolucja}}(\textcolor{keywordtype}{int} atrybut1, \textcolor{keywordtype}{int} atrybut2);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_stworzenie_a5d09da501c1c28f15613eeebe664ac93}{zwiekszenieAtrybutu}}(\textcolor{keywordtype}{int} atrybut);}
+\DoxyCodeLine{51     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_stworzenie_a2fa0cff7ac9ea905704dc7b9c35ab3b0}{czyUnik}}(\textcolor{keywordtype}{double} zrecznosc);}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_stworzenie_a0514d0faea0b997a2025fb63e9e02f36}{przywrocSile}}();}
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_stworzenie_ae9032df7e9ac29bb782befc00ba43b3e}{ulecz}}();}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_stworzenie_a1d25d20eed92214759a493184e58807f}{dodajExp}}(\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keyword}{friend} std::ostream \&\mbox{\hyperlink{class_stworzenie_acc6d3e1c63ae3f9b26db4ce9fcb575ba}{operator<<}}(std::ostream \&os, \textcolor{keyword}{const} \mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie);}
+\DoxyCodeLine{57 \};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//PROJEKT\_STWORZENIE\_H}}
+
+\end{DoxyCode}

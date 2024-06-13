@@ -1,0 +1,99 @@
+\hypertarget{_stworzenia_8h_source}{}\doxysection{Stworzenia.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by kinga on 16.06.2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef PROJEKT\_STWORZENIA\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define PROJEKT\_STWORZENIA\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Stworzenie.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_stworzenie_wodne}{StworzenieWodne}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_stworzenie}{Stworzenie}} \{}
+\DoxyCodeLine{11     std::map<Typ, double> mapa\{}
+\DoxyCodeLine{12             \{WODA, 0.75\},}
+\DoxyCodeLine{13             \{ZIEMIA, 1.25\},}
+\DoxyCodeLine{14             \{POWIETRZE, 1\},}
+\DoxyCodeLine{15             \{OGIEN, 1.25\},}
+\DoxyCodeLine{16             \{LOD, 1\},}
+\DoxyCodeLine{17             \{STAL, 1\}}
+\DoxyCodeLine{18     \};}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_stworzenie_wodne}{StworzenieWodne}}(std::string nazwa);}
+\DoxyCodeLine{21     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_stworzenie_wodne_abe3f1a48d62a8d77bb2a6a2073883ab3}{modyfikator}}(\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie) \textcolor{keyword}{override};}
+\DoxyCodeLine{22 \};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{class_stworzenie_ziemne}{StworzenieZiemne}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_stworzenie}{Stworzenie}} \{}
+\DoxyCodeLine{25     std::map<Typ, double> mapa\{}
+\DoxyCodeLine{26             \{WODA, 1\},}
+\DoxyCodeLine{27             \{ZIEMIA, 1\},}
+\DoxyCodeLine{28             \{POWIETRZE, 0.75\},}
+\DoxyCodeLine{29             \{OGIEN, 1.25\},}
+\DoxyCodeLine{30             \{LOD, 1.25\},}
+\DoxyCodeLine{31             \{STAL, 1.25\}}
+\DoxyCodeLine{32     \};}
+\DoxyCodeLine{33 \textcolor{keyword}{public}:}
+\DoxyCodeLine{34     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_stworzenie_ziemne}{StworzenieZiemne}}(std::string nazwa);}
+\DoxyCodeLine{35     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_stworzenie_ziemne_ab8af50a0aec7d74e4dae88688907c465}{modyfikator}}(\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie) \textcolor{keyword}{override};}
+\DoxyCodeLine{36 \};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{keyword}{class }\mbox{\hyperlink{class_stworzenie_ogniste}{StworzenieOgniste}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_stworzenie}{Stworzenie}}\{}
+\DoxyCodeLine{39     std::map<Typ, double> mapa\{}
+\DoxyCodeLine{40             \{WODA, 0.75\},}
+\DoxyCodeLine{41             \{ZIEMIA, 0.75\},}
+\DoxyCodeLine{42             \{POWIETRZE, 1\},}
+\DoxyCodeLine{43             \{OGIEN, 0.75\},}
+\DoxyCodeLine{44             \{LOD, 1.25\},}
+\DoxyCodeLine{45             \{STAL, 1.25\}}
+\DoxyCodeLine{46     \};}
+\DoxyCodeLine{47 \textcolor{keyword}{public}:}
+\DoxyCodeLine{48     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_stworzenie_ogniste}{StworzenieOgniste}}(std::string nazwa);}
+\DoxyCodeLine{49     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_stworzenie_ogniste_a7d79c74e92ab964aae7c037056786ae1}{modyfikator}}(\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie) \textcolor{keyword}{override};}
+\DoxyCodeLine{50 \};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{keyword}{class }\mbox{\hyperlink{class_stworzenie_powietrzne}{StworzeniePowietrzne}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_stworzenie}{Stworzenie}}\{}
+\DoxyCodeLine{53     std::map<Typ, double> mapa\{}
+\DoxyCodeLine{54             \{WODA, 1\},}
+\DoxyCodeLine{55             \{ZIEMIA, 0.75\},}
+\DoxyCodeLine{56             \{POWIETRZE, 1\},}
+\DoxyCodeLine{57             \{OGIEN, 1\},}
+\DoxyCodeLine{58             \{LOD, 1.25\},}
+\DoxyCodeLine{59             \{STAL, 0.75\}}
+\DoxyCodeLine{60     \};}
+\DoxyCodeLine{61 \textcolor{keyword}{public}:}
+\DoxyCodeLine{62     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_stworzenie_powietrzne}{StworzeniePowietrzne}}(std::string nazwa);}
+\DoxyCodeLine{63     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_stworzenie_powietrzne_a82dd55b8c33969d841855c46e0334fee}{modyfikator}}(\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie) \textcolor{keyword}{override};}
+\DoxyCodeLine{64 \};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 \textcolor{keyword}{class }\mbox{\hyperlink{class_stworzenie_lodowe}{StworzenieLodowe}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_stworzenie}{Stworzenie}}\{}
+\DoxyCodeLine{67     std::map<Typ, double> mapa\{}
+\DoxyCodeLine{68             \{WODA, 0.75\},}
+\DoxyCodeLine{69             \{ZIEMIA, 1.25\},}
+\DoxyCodeLine{70             \{POWIETRZE, 1\},}
+\DoxyCodeLine{71             \{OGIEN, 0.75\},}
+\DoxyCodeLine{72             \{LOD, 0.75\},}
+\DoxyCodeLine{73             \{STAL, 1\}}
+\DoxyCodeLine{74     \};}
+\DoxyCodeLine{75 \textcolor{keyword}{public}:}
+\DoxyCodeLine{76     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_stworzenie_lodowe}{StworzenieLodowe}}(std::string nazwa);}
+\DoxyCodeLine{77     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_stworzenie_lodowe_a55a0fc14b713e56abec64bdddd7b7827}{modyfikator}}(\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie) \textcolor{keyword}{override};}
+\DoxyCodeLine{78 \};}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 \textcolor{keyword}{class }\mbox{\hyperlink{class_stworzenie_stalowe}{StworzenieStalowe}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_stworzenie}{Stworzenie}}\{}
+\DoxyCodeLine{81     std::map<Typ, double> mapa\{}
+\DoxyCodeLine{82             \{WODA, 1.25\},}
+\DoxyCodeLine{83             \{ZIEMIA, 1\},}
+\DoxyCodeLine{84             \{POWIETRZE, 1.25\},}
+\DoxyCodeLine{85             \{OGIEN, 0.75\},}
+\DoxyCodeLine{86             \{LOD, 1\},}
+\DoxyCodeLine{87             \{STAL, 0.75\}}
+\DoxyCodeLine{88     \};}
+\DoxyCodeLine{89 \textcolor{keyword}{public}:}
+\DoxyCodeLine{90     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_stworzenie_stalowe}{StworzenieStalowe}}(std::string nazwa);}
+\DoxyCodeLine{91     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_stworzenie_stalowe_ab27f185d9a183553ba02ca77d3c81d2e}{modyfikator}}(\mbox{\hyperlink{class_stworzenie}{Stworzenie}} \&stworzenie) \textcolor{keyword}{override};}
+\DoxyCodeLine{92 \};}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//PROJEKT\_STWORZENIA\_H}}
+
+\end{DoxyCode}
